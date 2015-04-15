@@ -12,102 +12,102 @@ using namespace std;
 int ans[10];
 
 
-void q0() {
+void q0(int i) {
     cout << "\"Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.\"" << endl;
     cout << "1. Ferris Bueller's Day Off" << endl;
     cout << "2. Christmas Vacation" << endl;
     cout << "3. Grown Ups" << endl;
-    cin >> ans[0];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q1() {
+void q1(int i) {
     cout << "\"If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.\"" << endl;
     cout << "1. Percy Jackson & the Olympians: The Lightning Thief" << endl;
     cout << "2. The Chronicles of Narnia: Prince Caspian" << endl;
     cout << "3. Harry Potter and the Goblet of Fire" << endl;
-    cin >> ans[1];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q2() {
+void q2(int i) {
     cout << "\"This is awkward. Not you're awkward but just because we're - I'm awkward, you're gorgeous - wait what?\"" << endl;
     cout << "1. Tangled" << endl;
     cout << "2. Frozen" << endl;
     cout << "3. The Princess Diaries 2: Royal Engagement" << endl;
-    cin >> ans[2];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q3() {
+void q3(int i) {
     cout << "\"Do, or do not. There is no 'try'.\""<< endl;
     cout << "1. Star Wars IV: A New Hope" << endl;
     cout << "2. Star Wars V: The Empire Strikes Back" << endl;
     cout << "3. Star Wars VI: Return of the Jedi" << endl;
-    cin >> ans[3];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q4() {
+void q4(int i) {
     cout << "\"I shall call him squishy and he shall be mine. He shall be my squishy. Come here squishy!\"" << endl;
     cout << "1. Monsters, Inc." << endl;
     cout << "2. Toy Story 3" << endl;
     cout << "3. Finding Nemo" << endl;
-    cin >> ans[4];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q5() {
+void q5(int i) {
     cout << "\"Sometimes it is the people who no one imagines anything of who do the things that no one can imagine.\"" << endl;
     cout << "1. The Theory of Everything" << endl;
     cout << "2. The Imitation Game" << endl;
     cout << "3. Birdman" << endl;
-    cin >> ans[5];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q6() {
+void q6(int i) {
     cout << "\"Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.\"" << endl;
     cout << "1. The Grand Budapest Hotel" << endl;
     cout << "2. " << endl;
     cout << "3. " << endl;
-    cin >> ans[6];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q7() {
+void q7(int i) {
     cout << "\"Sell me this pen.\"" << endl;
     cout << "1. " << endl;
     cout << "2. " << endl;
     cout << "3. The Wolf of Wall Street" << endl;
-    cin >> ans[7];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q8() {
+void q8(int i) {
     cout << "\"Manners maketh man. Do you know what that means? Then let me teach you a lesson.\"" << endl;
     cout << "1. Kingsman: The Secret Service" << endl;
     cout << "2. " << endl;
     cout << "3. " << endl;
-    cin >> ans[8];
+    cin >> ans[i];
     cout << endl;
 }
 
 
-void q9() {
+void q9(int i) {
     cout << "\"You know how Sister Berthe always makes me kiss the floor after we've had a disagreement? Well, lately I've taken to kissing the floor whenever I see her coming, just to save time.\"" << endl;
     cout << "1. " << endl;
     cout << "2. The Sound Of Music" << endl;
     cout << "3. " << endl;
-    cin >> ans[9];
+    cin >> ans[i];
     cout << endl;
 }
 
@@ -120,16 +120,16 @@ int main() {
     cout << endl;
 
 
-    q0();
-    q1();
-    q2();
-    q3();
-    q4();
-    q5();
-    q6();
-    q7();
-    q8();
-    q9();
+    q0(0);
+    q1(1);
+    q2(2);
+    q3(3);
+    q4(4);
+    q5(5);
+    q6(6);
+    q7(7);
+    q8(8);
+    q9(9);
     
 
     

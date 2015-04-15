@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A9D45892-3D49-4059-97A0-DB4FF823D702</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ComputerSystems</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>731E302D04C9B6EA48656D539CBDDCAD0A4CD908</key>
+		<string>https://github.com/TrucHLe/Computer-Systems-Final-Spring-2015.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ComputerSystems.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>731E302D04C9B6EA48656D539CBDDCAD0A4CD908</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TrucHLe/Computer-Systems-Final-Spring-2015.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>731E302D04C9B6EA48656D539CBDDCAD0A4CD908</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>731E302D04C9B6EA48656D539CBDDCAD0A4CD908</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ComputerSystems</string>
+		</dict>
+	</array>
+</dict>
+</plist>
