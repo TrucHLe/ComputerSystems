@@ -2,7 +2,7 @@
 //  main.cpp
 //  ComputerSystems
 //
-//  Created by Sneaky Nick and foreign communist "Bamboo" on 4/6/15.
+//  Created by Truc Le and Nick Ailstock on 4/6/15.
 //  Copyright (c) 2015. All rights reserved.
 //
 
