@@ -88,7 +88,7 @@ void q5(int i) {
 
 void q6(int i) {
     cout << "\"Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.\"" << endl;
-    cout << "1. Boyhood " << endl;
+    cout << "1. Boyhood" << endl;
     cout << "2. The Grand Budapest Hotel" << endl;
     cout << "3. 12 Years a Slave" << endl;
     cin >> ans[i];
