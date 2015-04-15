@@ -31,6 +31,7 @@ void q0(int i) {
     cout << "1. Ferris Bueller's Day Off" << endl;
     cout << "2. Christmas Vacation" << endl;
     cout << "3. Grown Ups" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -41,6 +42,7 @@ void q1(int i) {
     cout << "1. Harry Potter and the Goblet of Fire" << endl;
     cout << "2. The Chronicles of Narnia: Prince Caspian" << endl;
     cout << "3. Percy Jackson & the Olympians: The Lightning Thief" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -51,6 +53,7 @@ void q2(int i) {
     cout << "1. Frozen" << endl;
     cout << "2. Tangled" << endl;
     cout << "3. The Princess Diaries 2: Royal Engagement" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -61,6 +64,7 @@ void q3(int i) {
     cout << "1. Star Wars IV: A New Hope" << endl;
     cout << "2. Star Wars V: The Empire Strikes Back" << endl;
     cout << "3. Star Wars VI: Return of the Jedi" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -71,6 +75,7 @@ void q4(int i) {
     cout << "1. Monsters, Inc." << endl;
     cout << "2. Finding Nemo" << endl;
     cout << "3. Toy Story 3" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -81,6 +86,7 @@ void q5(int i) {
     cout << "1. The Theory of Everything" << endl;
     cout << "2. The Imitation Game" << endl;
     cout << "3. Birdman" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -91,6 +97,7 @@ void q6(int i) {
     cout << "1. Boyhood" << endl;
     cout << "2. The Grand Budapest Hotel" << endl;
     cout << "3. 12 Years a Slave" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -101,6 +108,7 @@ void q7(int i) {
     cout << "1. American Hustle" << endl;
     cout << "2. Dallas Buyers Club" << endl;
     cout << "3. The Wolf of Wall Street" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -111,6 +119,7 @@ void q8(int i) {
     cout << "1. Iron Man 2" << endl;
     cout << "2. X-Men: First Class" << endl;
     cout << "3. Kingsman: The Secret Service" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
@@ -121,6 +130,7 @@ void q9(int i) {
     cout << "1. Mary Poppins" << endl;
     cout << "2. My Fair Lady" << endl;
     cout << "3. The Sound Of Music" << endl;
+    cout << ">  ";
     cin >> ans[i];
     cout << endl;
 }
