@@ -10,7 +10,7 @@
 using namespace std;
 
 int ans[10];
-int keys[10] = {1, 3, 2, 2, 3, 2, 1, 3, 1, 2}; //array of answer keys
+int keys[10];
 int i;
 
 
@@ -26,9 +26,9 @@ void q0(int i) {
 
 void q1(int i) {
     cout << "\"If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.\"" << endl;
-    cout << "1. Percy Jackson & the Olympians: The Lightning Thief" << endl;
+    cout << "1. Harry Potter and the Goblet of Fire" << endl;
     cout << "2. The Chronicles of Narnia: Prince Caspian" << endl;
-    cout << "3. Harry Potter and the Goblet of Fire" << endl;
+    cout << "3. Percy Jackson & the Olympians: The Lightning Thief" << endl;
     cin >> ans[i];
     cout << endl;
 }
@@ -36,8 +36,8 @@ void q1(int i) {
 
 void q2(int i) {
     cout << "\"This is awkward. Not you're awkward but just because we're - I'm awkward, you're gorgeous - wait what?\"" << endl;
-    cout << "1. Tangled" << endl;
-    cout << "2. Frozen" << endl;
+    cout << "1. Frozen" << endl;
+    cout << "2. Tangled" << endl;
     cout << "3. The Princess Diaries 2: Royal Engagement" << endl;
     cin >> ans[i];
     cout << endl;
@@ -57,8 +57,8 @@ void q3(int i) {
 void q4(int i) {
     cout << "\"I shall call him squishy and he shall be mine. He shall be my squishy. Come here squishy!\"" << endl;
     cout << "1. Monsters, Inc." << endl;
-    cout << "2. Toy Story 3" << endl;
-    cout << "3. Finding Nemo" << endl;
+    cout << "2. Finding Nemo" << endl;
+    cout << "3. Toy Story 3" << endl;
     cin >> ans[i];
     cout << endl;
 }
@@ -76,8 +76,8 @@ void q5(int i) {
 
 void q6(int i) {
     cout << "\"Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.\"" << endl;
-    cout << "1. The Grand Budapest Hotel" << endl;
-    cout << "2. " << endl;
+    cout << "1. " << endl;
+    cout << "2. The Grand Budapest Hotel" << endl;
     cout << "3. " << endl;
     cin >> ans[i];
     cout << endl;
@@ -96,9 +96,9 @@ void q7(int i) {
 
 void q8(int i) {
     cout << "\"Manners maketh man. Do you know what that means? Then let me teach you a lesson.\"" << endl;
-    cout << "1. Kingsman: The Secret Service" << endl;
+    cout << "1. " << endl;
     cout << "2. " << endl;
-    cout << "3. " << endl;
+    cout << "3. Kingsman: The Secret Service" << endl;
     cin >> ans[i];
     cout << endl;
 }
@@ -107,8 +107,8 @@ void q8(int i) {
 void q9(int i) {
     cout << "\"You know how Sister Berthe always makes me kiss the floor after we've had a disagreement? Well, lately I've taken to kissing the floor whenever I see her coming, just to save time.\"" << endl;
     cout << "1. " << endl;
-    cout << "2. The Sound Of Music" << endl;
-    cout << "3. " << endl;
+    cout << "2. " << endl;
+    cout << "3. The Sound Of Music" << endl;
     cin >> ans[i];
     cout << endl;
 }
@@ -132,6 +132,15 @@ int main() {
     q9(9);
     
 
+    for (int i = 0; i < 10; i++)
+    {
+        if (i < 3)
+            keys[i] = 1;
+        else if (i < 7)
+            keys[i] = 2;
+        else
+            keys[i] = 3;
+    }
     
     for (int i = 0; i < 10; i++)
     {
