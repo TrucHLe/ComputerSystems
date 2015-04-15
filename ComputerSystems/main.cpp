@@ -10,6 +10,7 @@
 using namespace std;
 
 int ans[10];
+int keys[10] = {1, 3, 2, 2, 3, 2, 1, 3, 1, 2}; //array of answer keys
 
 
 void q0(int i) {
@@ -112,8 +113,6 @@ void q9(int i) {
 }
 
 int main() {
-    
-    int keys[10] = {1, 3, 2, 2, 3, 2, 1, 3, 1, 2}; //array of answer keys
     int score = 0;
     
     cout << "Welcome thingy." << endl;
