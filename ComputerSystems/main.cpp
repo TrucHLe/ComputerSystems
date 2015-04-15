@@ -88,9 +88,9 @@ void q5(int i) {
 
 void q6(int i) {
     cout << "\"Rudeness is merely an expression of fear. People fear they won't get what they want. The most dreadful and unattractive person only needs to be loved, and they will open up like a flower.\"" << endl;
-    cout << "1. " << endl;
+    cout << "1. Boyhood " << endl;
     cout << "2. The Grand Budapest Hotel" << endl;
-    cout << "3. " << endl;
+    cout << "3. 12 Years a Slave" << endl;
     cin >> ans[i];
     cout << endl;
 }
@@ -98,8 +98,8 @@ void q6(int i) {
 
 void q7(int i) {
     cout << "\"Sell me this pen.\"" << endl;
-    cout << "1. " << endl;
-    cout << "2. " << endl;
+    cout << "1. American Hustle" << endl;
+    cout << "2. Dallas Buyers Club" << endl;
     cout << "3. The Wolf of Wall Street" << endl;
     cin >> ans[i];
     cout << endl;
@@ -108,8 +108,8 @@ void q7(int i) {
 
 void q8(int i) {
     cout << "\"Manners maketh man. Do you know what that means? Then let me teach you a lesson.\"" << endl;
-    cout << "1. " << endl;
-    cout << "2. " << endl;
+    cout << "1. Iron Man 2" << endl;
+    cout << "2. X-Men: First Class" << endl;
     cout << "3. Kingsman: The Secret Service" << endl;
     cin >> ans[i];
     cout << endl;
@@ -118,8 +118,8 @@ void q8(int i) {
 
 void q9(int i) {
     cout << "\"You know how Sister Berthe always makes me kiss the floor after we've had a disagreement? Well, lately I've taken to kissing the floor whenever I see her coming, just to save time.\"" << endl;
-    cout << "1. " << endl;
-    cout << "2. " << endl;
+    cout << "1. Mary Poppins" << endl;
+    cout << "2. My Fair Lady" << endl;
     cout << "3. The Sound Of Music" << endl;
     cin >> ans[i];
     cout << endl;
