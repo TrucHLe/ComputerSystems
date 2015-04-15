@@ -11,6 +11,7 @@ using namespace std;
 
 int ans[10];
 int keys[10] = {1, 3, 2, 2, 3, 2, 1, 3, 1, 2}; //array of answer keys
+int i;
 
 
 void q0(int i) {
