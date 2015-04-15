@@ -10,8 +10,20 @@
 using namespace std;
 
 int ans[10];
-int keys[10];
+int keys[10] = {1, 1, 1, 2, 2, 2, 2, 3, 3, 3};
 int i;
+
+/**
+ LDX 0, i
+ ASLX
+ LDA num, i
+ STA vector, x
+ 
+ LDX 1, i
+ ASLX
+ LDA num1, i
+ STA vector, x
+ **/
 
 
 void q0(int i) {
@@ -131,16 +143,6 @@ int main() {
     q8(8);
     q9(9);
     
-
-    for (int i = 0; i < 10; i++)
-    {
-        if (i < 3)
-            keys[i] = 1;
-        else if (i < 7)
-            keys[i] = 2;
-        else
-            keys[i] = 3;
-    }
     
     for (int i = 0; i < 10; i++)
     {
