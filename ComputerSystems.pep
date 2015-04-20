@@ -219,12 +219,14 @@ ans:     .BLOCK 20 ;global variable #2d10a
 keys:    .BLOCK 20 ;global variable #2d10a 
 i:       .BLOCK 2 ;global variable #2d
 score:   .EQUATE 0 ;local variable #2d
-hi:      .ASCII "Welcome thingy.\x00"
-bye:     .ASCII "Game ends here's your score bye thingy.\x00"
+hi:      .ASCII "Now listen you guys,\nYou know what normal kids would've instilled to slack off,\nBut not you guys, because you're not normal.\nYou're special.\nAnd because i think you have the right attitude, I think it's time we started our new class project.\nIt's called.... Famous Movies' Quotes.\nAnd it's a requirement. And it may sound easy, but nothing could be harder.\nIt will test your head, and your mind, and your brain too.\nAnd you could say that every team in the state will be competing for the top prize.\nNow lets see how many movies you've been watching.\x00"
+bye:     .ASCII "Congratulations, you have completed the most difficult game ever converted into PEP8! Your total score is \x00"
+bye2:    .ASCII "We will be having milk in cookies in Phy Psy to celebrate!\x00"
 
 main:    SUBSP 2, i ;allocate #score
          LDA 0, i
          STA score, s
+         
 
          ;initialize keys = {1, 1, 1, 2, 2, 2, 2, 3, 3, 3}
          LDA 1, i
@@ -333,8 +335,11 @@ after:   LDX i, d
          STX i, d
          BR loop
 out:     STRO bye, d
-         CHARO '\n', i
          DECO score, s
+         CHARO '/', i
+         DECO 10, i
+         CHARO '\n', i
+         STRO bye2, d
          CHARO '\n', i
          SUBSP 2, i ;deallocate #score 
 STOP

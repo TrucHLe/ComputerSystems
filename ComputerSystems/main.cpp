@@ -138,7 +138,16 @@ void q9(int i) {
 int main() {
     int score = 0;
     
-    cout << "Welcome thingy." << endl;
+    cout << "Now listen you guys," << endl;
+    cout << "You know what normal kids would've instilled to slack off," << endl;
+    cout << "But not you guys, because you're not normal." << endl;
+    cout << "You're special." << endl;
+    cout << "And because i think you have the right attitude, I think it's time we started our new class project." << endl;
+    cout << "It's called.... Famous Movies' Quotes." << endl;
+    cout << "And it's a requirement. And it may sound easy, but nothing could be harder." << endl;
+    cout << "It will test your head, and your mind, and your brain too." << endl;
+    cout << "And you could say that every team in the state will be competing for the top prize." << endl;
+    cout << "Now lets see how many movies you've been watching." << endl;
     cout << endl;
 
 
@@ -162,8 +171,9 @@ int main() {
     }
     
     
-    cout << "Game ends here's your score bye thingy." << endl;
+    cout << "Congratulations, you have completed the most difficult game ever converted into PEP8! Your total score is ";
     cout << score << endl;
+    cout << "We will be having milk in cookies in Phy Psy to celebrate!" << endl;
     
     return 0;
 
