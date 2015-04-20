@@ -1,4 +1,4 @@
-; Bamboo and Nicholas Ailstock
+; Nicholas Ailstock and Truc Le
 ; Computer Systems Final Project
 ; Professor Maria Schwartzman
 

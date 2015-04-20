@@ -2,7 +2,7 @@
 //  main.cpp
 //  ComputerSystems
 //
-//  Created by Truc Le and Nick Ailstock on 4/6/15.
+//  Created by Nick Ailstock and Truc Le on 4/6/15.
 //  Copyright (c) 2015. All rights reserved.
 //
 
