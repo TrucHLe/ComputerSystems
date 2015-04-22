@@ -4,12 +4,14 @@
 
 BR       main
 enter:   .ASCII ">  \x00"
+yes:     .ASCII "Correct!\x00"
 
 i0:      .EQUATE 4 ;formal parameter #2d
 q0Q:     .ASCII "\"Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.\"\x00"
 q0A1:    .ASCII "1. Ferris Bueller's Day Off\x00"
 q0A2:    .ASCII "2. Christmas Vacation\x00"
 q0A3:    .ASCII "3. Grown Ups\x00"
+q0R:     .ASCII "Wrong! It's Ferris Bueller's Day Off.\x00"
 q0:      STRO q0Q, d
          CHARO '\n', i
          STRO q0A1, d
@@ -21,6 +23,13 @@ q0:      STRO q0Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if0:     LDA ans, x
+         CPA keys, x
+         BREQ else0
+         STRO q0R, d
+         BR end0
+else0:   STRO yes, d
+end0:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -31,6 +40,7 @@ q1Q:     .ASCII "\"If you want to know what a man's like, take a good look at ho
 q1A1:    .ASCII "1. Harry Potter and the Goblet of Fire\x00"
 q1A2:    .ASCII "2. The Chronicles of Narnia: Prince Caspian\x00"
 q1A3:    .ASCII "3. Percy Jackson & the Olympians: The Lightning Thief\x00"
+q1R:     .ASCII "Wrong! It's Harry Potter and the Goblet of Fire.\x00"
 q1:      STRO q1Q, d
          CHARO '\n', i
          STRO q1A1, d
@@ -42,6 +52,13 @@ q1:      STRO q1Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if1:     LDA ans, x
+         CPA keys, x
+         BREQ else1
+         STRO q1R, d
+         BR end1
+else1:   STRO yes, d
+end1:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -52,6 +69,7 @@ q2Q:     .ASCII "\"This is awkward. Not you're awkward but just because we're - 
 q2A1:    .ASCII "1. Frozen\x00"
 q2A2:    .ASCII "2. Tangled\x00"
 q2A3:    .ASCII "3. The Princess Diaries 2: Royal Engagement\x00"
+q2R:     .ASCII "Wrong! It's Frozen.\x00"
 q2:      STRO q2Q, d
          CHARO '\n', i
          STRO q2A1, d
@@ -63,6 +81,13 @@ q2:      STRO q2Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if2:     LDA ans, x
+         CPA keys, x
+         BREQ else2
+         STRO q2R, d
+         BR end2  
+else2:   STRO yes, d
+end2:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -73,6 +98,7 @@ q3Q:     .ASCII "\"Do, or do not. There is no 'try'.\"\x00"
 q3A1:    .ASCII "1. Star Wars IV: A New Hope\x00"
 q3A2:    .ASCII "2. Star Wars V: The Empire Strikes Back\x00"
 q3A3:    .ASCII "3. Star Wars VI: Return of the Jedi\x00"
+q3R:     .ASCII "Wrong! It's Star Wars V: The Empire Strikes Back.\x00"
 q3:      STRO q3Q, d
          CHARO '\n', i
          STRO q3A1, d
@@ -84,6 +110,13 @@ q3:      STRO q3Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if3:     LDA ans, x
+         CPA keys, x
+         BREQ else3
+         STRO q3R, d
+         BR end3  
+else3:   STRO yes, d
+end3:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -94,6 +127,7 @@ q4Q:     .ASCII "\"I shall call him squishy and he shall be mine. He shall be my
 q4A1:    .ASCII "1. Monsters, Inc.\x00"
 q4A2:    .ASCII "2. Finding Nemo\x00"
 q4A3:    .ASCII "3. Toy Story 3\x00"
+q4R:     .ASCII "Wrong! It's Finding Nemo.\x00"
 q4:      STRO q4Q, d
          CHARO '\n', i
          STRO q4A1, d
@@ -105,6 +139,13 @@ q4:      STRO q4Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if4:     LDA ans, x
+         CPA keys, x
+         BREQ else4
+         STRO q4R, d
+         BR end4
+else4:   STRO yes, d
+end4:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -115,6 +156,7 @@ q5Q:     .ASCII "\"Sometimes it is the people who no one imagines anything of wh
 q5A1:    .ASCII "1. The Theory of Everything\x00"
 q5A2:    .ASCII "2. The Imitation Game\x00"
 q5A3:    .ASCII "3. Birdman\x00"
+q5R:     .ASCII "Wrong! It's The Imitation Game.\x00"
 q5:      STRO q5Q, d
          CHARO '\n', i
          STRO q5A1, d
@@ -126,6 +168,13 @@ q5:      STRO q5Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if5:     LDA ans, x
+         CPA keys, x
+         BREQ else5
+         STRO q5R, d
+         BR end5
+else5:   STRO yes, d
+end5:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -136,6 +185,7 @@ q6Q:     .ASCII "\"Rudeness is merely an expression of fear. People fear they wo
 q6A1:    .ASCII "1. Boyhood\x00"
 q6A2:    .ASCII "2. The Grand Budapest Hotel\x00"
 q6A3:    .ASCII "3. 12 Years a Slave\x00"
+q6R:     .ASCII "Wrong! It's The Grand Budapest Hotel.\x00"
 q6:      STRO q6Q, d
          CHARO '\n', i
          STRO q6A1, d
@@ -147,6 +197,13 @@ q6:      STRO q6Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if6:     LDA ans, x
+         CPA keys, x
+         BREQ else6
+         STRO q6R, d
+         BR end6
+else6:   STRO yes, d
+end6:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -157,6 +214,7 @@ q7Q:     .ASCII "\"Sell me this pen.\"\x00"
 q7A1:    .ASCII "1. American Hustle\x00"
 q7A2:    .ASCII "2. Dallas Buyers Club\x00"
 q7A3:    .ASCII "3. The Wolf of Wall Street\x00"
+q7R:     .ASCII "Wrong! It's The Wolf of Wall Street.\x00"
 q7:      STRO q7Q, d
          CHARO '\n', i
          STRO q7A1, d
@@ -168,6 +226,13 @@ q7:      STRO q7Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if7:     LDA ans, x
+         CPA keys, x
+         BREQ else7
+         STRO q7R, d
+         BR end7
+else7:   STRO yes, d
+end7:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -178,6 +243,7 @@ q8Q:     .ASCII "\"Manners maketh man. Do you know what that means? Then let me 
 q8A1:    .ASCII "1. Iron Man 2\x00"
 q8A2:    .ASCII "2. X-Men: First Class\x00"
 q8A3:    .ASCII "3. Kingsman: The Secret Service\x00"
+q8R:     .ASCII "Wrong! It's Kingsman: The Secret Service.\x00"
 q8:      STRO q8Q, d
          CHARO '\n', i
          STRO q8A1, d
@@ -189,6 +255,13 @@ q8:      STRO q8Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if8:     LDA ans, x
+         CPA keys, x
+         BREQ else8
+         STRO q8R, d
+         BR end8
+else8:   STRO yes, d
+end8:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -199,6 +272,7 @@ q9Q:     .ASCII "\"You know how Sister Berthe always makes me kiss the floor aft
 q9A1:    .ASCII "1. Mary Poppins\x00"
 q9A2:    .ASCII "2. My Fair Lady\x00"
 q9A3:    .ASCII "3. The Sound Of Music\x00"
+q9R:     .ASCII "Wrong! It's The Sound Of Music.\x00"
 q9:      STRO q9Q, d
          CHARO '\n', i
          STRO q9A1, d
@@ -210,6 +284,13 @@ q9:      STRO q9Q, d
          STRO enter, d
          ASLX
          DECI ans, x
+if9:     LDA ans, x
+         CPA keys, x
+         BREQ else9
+         STRO q9R, d
+         BR end9
+else9:   STRO yes, d
+end9:    CHARO '\n', i
          CHARO '\n', i
          RET0
 
@@ -264,6 +345,7 @@ main:    SUBSP 2, i ;allocate #score
          STA keys, x
 
          STRO hi, d
+         CHARO '\n', i
          CHARO '\n', i
 
          ;function calls

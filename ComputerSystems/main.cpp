@@ -68,7 +68,7 @@ void q2(int i) {
     cin >> ans[i];
 
     if (ans[i] != keys[i])
-        cout << "Wrong! It's Frozen" << endl;
+        cout << "Wrong! It's Frozen.s" << endl;
     else
         cout << "Correct!" << endl;
     
