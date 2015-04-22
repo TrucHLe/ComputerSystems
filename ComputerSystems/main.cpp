@@ -33,6 +33,11 @@ void q0(int i) {
     cout << "3. Grown Ups" << endl;
     cout << ">  ";
     cin >> ans[i];
+    
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's Ferris Bueller's Day Off." << endl;
+    else
+        cout << "Correct!" << endl;
     cout << endl;
 }
 
@@ -44,6 +49,12 @@ void q1(int i) {
     cout << "3. Percy Jackson & the Olympians: The Lightning Thief" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's Harry Potter and the Goblet of Fire." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -52,9 +63,15 @@ void q2(int i) {
     cout << "\"This is awkward. Not you're awkward but just because we're - I'm awkward, you're gorgeous - wait what?\"" << endl;
     cout << "1. Frozen" << endl;
     cout << "2. Tangled" << endl;
-    cout << "3. The Princess Diaries 2: Royal Engagement" << endl;
+    cout << "3. The Princess Diaries 2: Royal Engagement." << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's Frozen" << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -66,6 +83,12 @@ void q3(int i) {
     cout << "3. Star Wars VI: Return of the Jedi" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's Star Wars V: The Empire Strikes Back." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -77,6 +100,12 @@ void q4(int i) {
     cout << "3. Toy Story 3" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's Finding Nemo." << endl;
+    else
+        cout << "Correct!" << endl;
+
     cout << endl;
 }
 
@@ -88,6 +117,12 @@ void q5(int i) {
     cout << "3. Birdman" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's The Imitation Game." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -99,6 +134,12 @@ void q6(int i) {
     cout << "3. 12 Years a Slave" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's The Grand Budapest Hotel." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -110,6 +151,12 @@ void q7(int i) {
     cout << "3. The Wolf of Wall Street" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's The Wolf of Wall Street." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -121,6 +168,12 @@ void q8(int i) {
     cout << "3. Kingsman: The Secret Service" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's Kingsman: The Secret Service." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -132,6 +185,12 @@ void q9(int i) {
     cout << "3. The Sound Of Music" << endl;
     cout << ">  ";
     cin >> ans[i];
+
+    if (ans[i] != keys[i])
+        cout << "Wrong! It's The Sound Of Music." << endl;
+    else
+        cout << "Correct!" << endl;
+    
     cout << endl;
 }
 
@@ -172,7 +231,8 @@ int main() {
     
     
     cout << "Congratulations, you have completed the most difficult game ever converted into PEP8! Your total score is ";
-    cout << score << endl;
+    cout << score;
+    cout << "/10" << endl;
     cout << "We will be having milk in cookies in Phy Psy to celebrate!" << endl;
     
     return 0;
